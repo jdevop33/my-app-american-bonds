@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SVGProps } from "react";
-const ChaRt = (props: SVGProps<SVGSVGElement>) => (
+const Test = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={800} height={500} {...props}>
     <path fill="#fff" d="M0 0h800v500H0z" />
     <text
@@ -148,4 +148,4 @@ const ChaRt = (props: SVGProps<SVGSVGElement>) => (
     </text>
   </svg>
 );
-export default ChaRt;
+export default Test;

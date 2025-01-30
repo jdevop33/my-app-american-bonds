@@ -5,7 +5,7 @@ import CaseStudyCard from "@/components/CaseStudyCard";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import CallToAction from "@/components/CallToAction";
-import ChaRt from "@/components/chart";
+import ChaRt from "@/components/Test";
 
 export const metadata = {
   title:
