@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -15,14 +15,14 @@ const testimonials = [
     title: "Senior Investment Manager",
     image: "/images/john-doe.jpg",
   },
-]
+];
 
 export default function Testimonials() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {testimonials.map((testimonial, index) => (
         <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-          <p className="text-gray-600 italic mb-4">"{testimonial.quote}"</p>
+          <p className="text-gray-600 italic mb-4">&quot;{testimonial.quote}&quot;</p>
           <div className="flex items-center">
             <Image
               src={testimonial.image || "/placeholder.svg"}
@@ -39,6 +39,5 @@ export default function Testimonials() {
         </div>
       ))}
     </div>
-  )
+  );
 }
-

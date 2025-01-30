@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { DollarSign, Zap, Users, BarChart2 } from "lucide-react"
+import Link from "next/link";
+import { DollarSign, Zap, Users, BarChart2 } from "lucide-react";
 
 export default function ForCities() {
   return (
@@ -8,8 +8,8 @@ export default function ForCities() {
         For City Managers: Modernize Without the Burden
       </h1>
       <p className="text-xl text-gray-700 mb-12 max-w-3xl">
-        Upgrade your city's infrastructure, reduce costs, and create jobs without raising taxes or burdening your
-        budget.
+        Upgrade your city's infrastructure, reduce costs, and create jobs
+        without raising taxes or burdening your budget.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -36,10 +36,13 @@ export default function ForCities() {
       </div>
 
       <div className="bg-pictonBlue-50 rounded-lg p-8 mb-12">
-        <h2 className="text-2xl font-serif font-bold text-pictonBlue-800 mb-4">Easy Implementation</h2>
+        <h2 className="text-2xl font-serif font-bold text-pictonBlue-800 mb-4">
+          Easy Implementation
+        </h2>
         <p className="text-gray-700 mb-4">
-          Bright America Bonds come with bundled financing, performance guarantees, and streamlined underwriting, making
-          it simple for cities to adopt and implement infrastructure modernization projects.
+          Bright America Bonds come with bundled financing, performance
+          guarantees, and streamlined underwriting, making it simple for cities
+          to adopt and implement infrastructure modernization projects.
         </p>
         <Link
           href="/implementation-guide"
@@ -58,14 +61,21 @@ export default function ForCities() {
         </Link>
       </div>
     </div>
-  )
+  );
 }
 
-const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => (
+const FeatureCard = ({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) => (
   <div className="bg-white p-6 rounded-lg shadow-md border border-pictonBlue-100">
     <div className="mb-4">{icon}</div>
     <h3 className="text-xl font-semibold mb-2 text-pictonBlue-800">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </div>
-)
-
+);

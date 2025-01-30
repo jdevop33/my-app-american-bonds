@@ -1,11 +1,19 @@
-import Link from "next/link"
-import { ArrowRight, Shield, TrendingUp, Leaf, BarChart2, DollarSign } from "lucide-react"
+import Link from "next/link";
+import {
+  ArrowRight,
+  Shield,
+  TrendingUp,
+  Leaf,
+  BarChart2,
+  DollarSign,
+} from "lucide-react";
 
 export const metadata = {
-  title: "Why Invest in Bright America Bonds | Secure and Sustainable Infrastructure Financing",
+  title:
+    "Why Invest in Bright America Bonds | Secure and Sustainable Infrastructure Financing",
   description:
     "Discover why Bright America Bonds offer a unique investment opportunity with low risk, attractive yields, and alignment with ESG goals. Learn about our self-funding model backed by energy savings.",
-}
+};
 
 export default function WhyInvest() {
   return (
@@ -17,8 +25,9 @@ export default function WhyInvest() {
 
         <div className="max-w-3xl mx-auto mb-16">
           <p className="text-xl text-gray-700 mb-8">
-            Bright America Bonds offer a unique investment opportunity that combines the stability of municipal bonds
-            with the growth potential of sustainable infrastructure projects. Here's why they stand out:
+            Bright America Bonds offer a unique investment opportunity that
+            combines the stability of municipal bonds with the growth potential
+            of sustainable infrastructure projects. Here&apos;s why they stand out:
           </p>
         </div>
 
@@ -46,37 +55,44 @@ export default function WhyInvest() {
         </div>
 
         <div className="bg-green-50 p-8 rounded-lg mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">What Makes Bright America Bonds Special</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">
+            What Makes Bright America Bonds Special
+          </h2>
           <ul className="space-y-4">
             <li className="flex items-start">
               <ArrowRight className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-1" />
               <span>
-                <strong>Self-Funding Model:</strong> Repayment is secured through measurable savings in energy costs,
-                reducing reliance on traditional tax revenues.
+                <strong>Self-Funding Model:</strong> Repayment is secured
+                through measurable savings in energy costs, reducing reliance on
+                traditional tax revenues.
               </span>
             </li>
             <li className="flex items-start">
               <ArrowRight className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-1" />
               <span>
-                <strong>Predictable Returns:</strong> With a taxable-equivalent yield comparable to high-grade corporate
-                bonds, Bright America Bonds deliver consistent, tax-advantaged returns.
+                <strong>Predictable Returns:</strong> With a taxable-equivalent
+                yield comparable to high-grade corporate bonds, Bright America
+                Bonds deliver consistent, tax-advantaged returns.
               </span>
             </li>
             <li className="flex items-start">
               <ArrowRight className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-1" />
               <span>
-                <strong>Win-Win for All:</strong> Municipalities modernize infrastructure without upfront costs, while
-                investors benefit from low-risk, tax-advantaged returns.
+                <strong>Win-Win for All:</strong> Municipalities modernize
+                infrastructure without upfront costs, while investors benefit
+                from low-risk, tax-advantaged returns.
               </span>
             </li>
           </ul>
         </div>
 
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 font-serif">Ready to Invest in America's Future?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 font-serif">
+            Ready to Invest in America&apos;s Future?
+          </h2>
           <p className="text-xl text-gray-700 mb-8">
-            Join us in modernizing America's infrastructure while securing your financial future with Bright America
-            Bonds.
+            Join us in modernizing America&apos;s infrastructure while securing your
+            financial future with Bright America Bonds.
           </p>
           <Link href="/contact?type=investor" className="btn-primary">
             Contact Us to Invest
@@ -84,41 +100,52 @@ export default function WhyInvest() {
         </div>
 
         <div className="bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">Financial Stability</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">
+            Financial Stability
+          </h2>
           <p className="text-gray-700 mb-4">
-            Bright America Bonds are backed by more than just energy savings. State and local governments have
-            significantly improved their financial positions in recent years:
+            Bright America Bonds are backed by more than just energy savings.
+            State and local governments have significantly improved their
+            financial positions in recent years:
           </p>
           <ul className="space-y-2 mb-4">
             <li className="flex items-start">
               <DollarSign className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-1" />
               <span>
-                State rainy day funds have grown to an average of 13% of general fund spending, providing a robust
-                financial cushion.
+                State rainy day funds have grown to an average of 13% of general
+                fund spending, providing a robust financial cushion.
               </span>
             </li>
             <li className="flex items-start">
               <DollarSign className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-1" />
               <span>
-                Municipalities are required by law to maintain balanced budgets, unlike federal government debt.
+                Municipalities are required by law to maintain balanced budgets,
+                unlike federal government debt.
               </span>
             </li>
           </ul>
           <p className="text-gray-700">
-            These factors contribute to the overall stability and attractiveness of Bright America Bonds as an
-            investment option.
+            These factors contribute to the overall stability and attractiveness
+            of Bright America Bonds as an investment option.
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => (
+const FeatureCard = ({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) => (
   <div className="bg-white p-6 rounded-lg shadow-lg">
     <div className="flex justify-center mb-4">{icon}</div>
     <h3 className="text-xl font-semibold text-center mb-4">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </div>
-)
-
+);

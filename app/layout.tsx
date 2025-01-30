@@ -1,19 +1,23 @@
-import "./globals.css"
-import { Mona_Sans as FontSans, Young_Serif as FontSerif } from "next/font/google"
-import { cn } from "@/lib/utils"
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+
+import { ThemeProvider } from "next-themes"
+
+
+import "./globals.css";
+import { Inter as FontSans, Young_Serif as FontSerif } from "next/font/google";
+import { cn } from "@/lib/utils";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
 
 const fontSerif = FontSerif({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-serif",
-})
+});
 
 export const metadata = {
   title: {
@@ -22,7 +26,13 @@ export const metadata = {
   },
   description:
     "Modernize your city's infrastructure without raising taxes. Bright America Bonds provide innovative financing solutions for energy-efficient upgrades.",
-  keywords: ["municipal bonds", "infrastructure financing", "energy efficiency", "LED streetlights", "smart cities"],
+  keywords: [
+    "municipal bonds",
+    "infrastructure financing",
+    "energy efficiency",
+    "LED streetlights",
+    "smart cities",
+  ],
   openGraph: {
     title: "Bright America Bonds - Financing Smart Infrastructure",
     description:
@@ -59,21 +69,33 @@ export const metadata = {
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-white font-sans antialiased", fontSans.variable, fontSerif.variable)}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <body
+        className={cn(
+          "min-h-screen bg-white font-sans antialiased",
+          fontSans.variable,
+          fontSerif.variable,
+        )}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
-

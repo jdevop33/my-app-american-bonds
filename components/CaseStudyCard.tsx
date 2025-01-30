@@ -1,30 +1,46 @@
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 
 interface CaseStudyCardProps {
-  city: string
-  state?: string
-  country?: string
-  savings: string
-  description: string
+  city: string;
+  state?: string;
+  country?: string;
+  savings: string;
+  description: string;
+  metrics: Array<{
+    label: string;
+    value: string;
+  }>;
 }
 
-export default function CaseStudyCard({ city, state, country, savings, description }: CaseStudyCardProps) {
-  const location = state ? `${city}, ${state}` : `${city}, ${country}`
-  const slug = city.toLowerCase().replace(/\s+/g, "-")
-
+const CaseStudyCard = ({
+  city,
+  state,
+  country,
+  savings,
+  description,
+  metrics,
+}: CaseStudyCardProps) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg">
-      <h3 className="text-xl font-semibold mb-2">{location}</h3>
-      <p className="text-2xl font-bold text-pictonBlue-600 mb-2">{savings}</p>
-      <p className="text-gray-600 mb-4">{description}</p>
-      <Link
-        href={`/case-studies/${slug}`}
-        className="text-pictonBlue-600 font-semibold hover:text-pictonBlue-700 inline-flex items-center"
-      >
-        Read Full Case Study <ArrowRight className="ml-2 w-4 h-4" />
-      </Link>
+    <div className="bg-white rounded-lg shadow-lg p-6">
+      <div className="mb-4">
+        <h3 className="text-2xl font-bold">
+          {city}, {state || country}
+        </h3>
+        <div className="mt-2">
+          <span className="text-xl font-semibold text-primary">{savings}</span>
+          <span className="text-gray-600 ml-2">{description}</span>
+        </div>
+      </div>
+      
+      <div className="space-y-3">
+        {metrics.map((metric, index) => (
+          <div key={index} className="flex justify-between">
+            <span className="text-gray-600">{metric.label}</span>
+            <span className="font-medium">{metric.value}</span>
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
+export default CaseStudyCard;

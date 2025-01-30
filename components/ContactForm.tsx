@@ -1,16 +1,23 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
-import { Loader2 } from "lucide-react"
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { Loader2 } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { useToast } from "@/components/ui/use-toast"
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "../hooks/use-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -22,11 +29,11 @@ const formSchema = z.object({
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
-})
+});
 
 export function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const { toast } = useToast()
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -35,10 +42,10 @@ export function ContactForm() {
       email: "",
       message: "",
     },
-  })
+  });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true)
+    setIsSubmitting(true);
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -46,25 +53,26 @@ export function ContactForm() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(values),
-      })
+      });
 
       if (response.ok) {
         toast({
           title: "Message sent successfully!",
           description: "We'll get back to you as soon as possible.",
-        })
-        form.reset()
+        });
+        form.reset();
       } else {
-        throw new Error("Failed to send message")
+        throw new Error("Failed to send message");
       }
-    } catch (error) {
+    } catch (error: unknown) {
       toast({
         title: "Error",
-        description: "There was a problem sending your message. Please try again.",
+        description:
+          error instanceof Error ? error.message : "There was a problem sending your message. Please try again.",
         variant: "destructive",
-      })
+      });
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   }
 
@@ -91,7 +99,12 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="johndoe@example.com" {...field} className="w-full" />
+                <Input
+                  type="email"
+                  placeholder="johndoe@example.com"
+                  {...field}
+                  className="w-full"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -104,7 +117,11 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Your message here..." {...field} className="w-full h-32" />
+                <Textarea
+                  placeholder="Your message here..."
+                  {...field}
+                  className="w-full h-32"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -116,6 +133,5 @@ export function ContactForm() {
         </Button>
       </form>
     </Form>
-  )
+  );
 }
-

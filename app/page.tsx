@@ -1,28 +1,17 @@
-import Link from "next/link"
-import Image from "next/image"
-import {
-  ArrowRight,
-  LightbulbIcon,
-  BarChart,
-  Users,
-  Leaf,
-  DollarSign,
-  Building,
-  Shield,
-  TrendingUp,
-} from "lucide-react"
-import SavingsCalculator from "@/components/SavingsCalculator"
-import CaseStudyCard from "@/components/CaseStudyCard"
-import HowItWorks from "@/components/HowItWorks"
-import InvestorInfo from "@/components/InvestorInfo"
-import Testimonials from "@/components/Testimonials"
-import CallToAction from "@/components/CallToAction"
+import Link from "next/link";
+import Image from "next/image";
+import SavingsCalculator from "@/components/SavingsCalculator";
+import CaseStudyCard from "@/components/CaseStudyCard";
+import HowItWorks from "@/components/HowItWorks";
+import Testimonials from "@/components/Testimonials";
+import CallToAction from "@/components/CallToAction";
 
 export const metadata = {
-  title: "Bright America Bonds - Secure, Sustainable, Self-Funding Infrastructure Financing",
+  title:
+    "Bright America Bonds - Secure, Sustainable, Self-Funding Infrastructure Financing",
   description:
     "Empower cities to modernize infrastructure without raising taxes. Discover how Bright America Bonds offer secure, sustainable, and self-funding solutions for municipal projects.",
-}
+};
 
 export default function Home() {
   return (
@@ -63,9 +52,12 @@ export default function Home() {
             className="absolute z-0"
           />
           <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">Secure. Sustainable. Self-Funding.</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              Secure. Sustainable. Self-Funding.
+            </h1>
             <p className="text-xl md:text-2xl mb-8">
-              Bright America Bonds empower cities to modernize without raising taxes.
+              Bright America Bonds empower cities to modernize without raising
+              taxes.
             </p>
             <Link href="#how-it-works" className="btn-primary text-lg">
               Discover How It Works
@@ -76,7 +68,9 @@ export default function Home() {
         {/* How It Works */}
         <section id="how-it-works" className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">How It Works</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">
+              How It Works
+            </h2>
             <HowItWorks />
           </div>
         </section>
@@ -84,7 +78,9 @@ export default function Home() {
         {/* Case Studies */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">Success Stories</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">
+              Success Stories
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <CaseStudyCard
                 city="Portland"
@@ -128,10 +124,14 @@ export default function Home() {
         {/* Financial Benefits */}
         <section className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">Financial Benefits</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">
+              Financial Benefits
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Competitive Yields</h3>
+                <h3 className="text-2xl font-semibold mb-4">
+                  Competitive Yields
+                </h3>
                 <Image
                   src="/images/yield-comparison-chart.png"
                   alt="Municipal bond yields compared to Treasuries and corporate bonds"
@@ -141,7 +141,9 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Self-Funding Model</h3>
+                <h3 className="text-2xl font-semibold mb-4">
+                  Self-Funding Model
+                </h3>
                 <Image
                   src="/images/self-funding-infographic.png"
                   alt="Infographic explaining how the bonds are self-funded via energy savings"
@@ -157,7 +159,9 @@ export default function Home() {
         {/* Testimonials */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">What People Are Saying</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">
+              What People Are Saying
+            </h2>
             <Testimonials />
           </div>
         </section>
@@ -165,7 +169,9 @@ export default function Home() {
         {/* Savings Calculator Preview */}
         <section className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">Calculate Your Savings</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-serif">
+              Calculate Your Savings
+            </h2>
             <SavingsCalculator />
             <div className="mt-8 text-center">
               <Link href="/savings-calculator" className="btn-primary">
@@ -178,8 +184,13 @@ export default function Home() {
         {/* Call to Action */}
         <section className="py-20 bg-green-900 text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-bold mb-6 font-serif">Let's Light the Way to a Brighter Future</h2>
-            <p className="text-xl mb-8">Ready to modernize your city's infrastructure or invest in America's future?</p>
+            <h2 className="text-4xl font-bold mb-6 font-serif">
+              Let&apos;s Light the Way to a Brighter Future
+            </h2>
+            <p className="text-xl mb-8">
+              Ready to modernize your city&apos;s infrastructure or invest in
+              America&apos;s future?
+            </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/contact?type=municipality" className="btn-primary">
                 For Municipalities
@@ -193,6 +204,5 @@ export default function Home() {
         <CallToAction />
       </div>
     </>
-  )
+  );
 }
-

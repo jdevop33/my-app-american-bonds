@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { ArrowRight, Lightbulb } from "lucide-react"
+import Link from "next/link";
+import { ArrowRight, Lightbulb } from "lucide-react";
 
 export default function CaseStudies() {
   return (
@@ -8,8 +8,9 @@ export default function CaseStudies() {
         Lighting Up the Future: Cities Leading the Way
       </h1>
       <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
-        Discover how innovative cities around the world have implemented LED street light replacement projects, reducing
-        their carbon footprint and saving millions in energy costs.
+        Discover how innovative cities around the world have implemented LED
+        street light replacement projects, reducing their carbon footprint and
+        saving millions in energy costs.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -19,25 +20,34 @@ export default function CaseStudies() {
       </div>
 
       <div className="bg-muted rounded-lg p-8 mb-12">
-        <h2 className="text-2xl font-serif font-bold text-foreground mb-4">The Global Impact of LED Street Lights</h2>
+        <h2 className="text-2xl font-serif font-bold text-foreground mb-4">
+          The Global Impact of LED Street Lights
+        </h2>
         <p className="text-muted-foreground mb-4">
-          LED street lights are revolutionizing urban infrastructure worldwide, offering significant energy savings,
-          reduced maintenance costs, and improved environmental outcomes. Cities across America and around the globe are
-          leading the charge in sustainable lighting solutions.
+          LED street lights are revolutionizing urban infrastructure worldwide,
+          offering significant energy savings, reduced maintenance costs, and
+          improved environmental outcomes. Cities across America and around the
+          globe are leading the charge in sustainable lighting solutions.
         </p>
-        <Link href="/about" className="text-primary font-semibold hover:underline inline-flex items-center">
-          Learn More About LED Technology <ArrowRight className="ml-2 w-4 h-4" />
+        <Link
+          href="/about"
+          className="text-primary font-semibold hover:underline inline-flex items-center"
+        >
+          Learn More About LED Technology{" "}
+          <ArrowRight className="ml-2 w-4 h-4" />
         </Link>
       </div>
 
       <div className="text-center">
-        <h2 className="text-3xl font-serif font-bold text-foreground mb-6">Ready to Illuminate Your City's Future?</h2>
+        <h2 className="text-3xl font-serif font-bold text-foreground mb-6">
+          Ready to Illuminate Your City&apos;s Future?
+        </h2>
         <Link href="/contact" className="btn-primary">
           Get Started with Bright America Bonds
         </Link>
       </div>
     </div>
-  )
+  );
 }
 
 const CityCard = ({
@@ -47,7 +57,14 @@ const CityCard = ({
   projectDetails,
   savings,
   link,
-}: { name: string; state?: string; country: string; projectDetails: string; savings: string; link: string }) => (
+}: {
+  name: string;
+  state?: string;
+  country: string;
+  projectDetails: string;
+  savings: string;
+  link: string;
+}) => (
   <div className="bg-background p-6 rounded-lg shadow-md border border-border">
     <Lightbulb className="w-12 h-12 text-primary mb-4" />
     <h3 className="text-xl font-semibold mb-2 text-foreground">
@@ -55,11 +72,14 @@ const CityCard = ({
     </h3>
     <p className="text-muted-foreground mb-4">{projectDetails}</p>
     <p className="text-lg font-bold text-primary mb-4">{savings}</p>
-    <Link href={link} className="text-primary font-semibold hover:underline inline-flex items-center">
+    <Link
+      href={link}
+      className="text-primary font-semibold hover:underline inline-flex items-center"
+    >
       Read More <ArrowRight className="ml-2 w-4 h-4" />
     </Link>
   </div>
-)
+);
 
 const cities = [
   {
@@ -73,7 +93,8 @@ const cities = [
     name: "Ann Arbor",
     state: "MI",
     country: "USA",
-    projectDetails: "Pioneering LED streetlight program with innovative funding and technology",
+    projectDetails:
+      "Pioneering LED streetlight program with innovative funding and technology",
     savings: "Over $100,000 saved annually",
     link: "/case-studies/ann-arbor",
   },
@@ -81,7 +102,8 @@ const cities = [
     name: "Los Angeles",
     state: "CA",
     country: "USA",
-    projectDetails: "Completed world's largest LED retrofit, converting 140,000+ street lights",
+    projectDetails:
+      "Completed world's largest LED retrofit, converting 140,000+ street lights",
     savings: "$9 million saved annually",
     link: "/case-studies/los-angeles",
   },
@@ -89,7 +111,8 @@ const cities = [
     name: "Portland",
     state: "OR",
     country: "USA",
-    projectDetails: "Converted 50,000+ streetlights to LED in a three-year project",
+    projectDetails:
+      "Converted 50,000+ streetlights to LED in a three-year project",
     savings: "$1.5 million saved annually",
     link: "/case-studies/portland",
   },
@@ -97,7 +120,8 @@ const cities = [
     name: "Cleveland",
     state: "OH",
     country: "USA",
-    projectDetails: "Upgrading 61,000 street lights with integrated smart cameras",
+    projectDetails:
+      "Upgrading 61,000 street lights with integrated smart cameras",
     savings: "Improved safety and efficiency",
     link: "/case-studies",
   },
@@ -113,7 +137,8 @@ const cities = [
     name: "San Francisco",
     state: "CA",
     country: "USA",
-    projectDetails: "Replacing 18,500 high-pressure sodium lights with warm white LEDs",
+    projectDetails:
+      "Replacing 18,500 high-pressure sodium lights with warm white LEDs",
     savings: "Enhanced visibility and energy savings",
     link: "/case-studies",
   },
@@ -121,7 +146,8 @@ const cities = [
     name: "Boston",
     state: "MA",
     country: "USA",
-    projectDetails: "Early adopter since 2010, replacing mercury vapor and sodium lights",
+    projectDetails:
+      "Early adopter since 2010, replacing mercury vapor and sodium lights",
     savings: "60% reduction in energy use and emissions",
     link: "/case-studies",
   },
@@ -157,5 +183,4 @@ const cities = [
     savings: "Significant reduction in energy usage",
     link: "/case-studies",
   },
-]
-
+];

@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-sm">
@@ -22,7 +22,10 @@ const Header = () => {
             <NavLink href="/savings-calculator">Savings Calculator</NavLink>
             <NavLink href="/contact">Contact</NavLink>
           </nav>
-          <button className="md:hidden text-foreground" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button
+            className="md:hidden text-foreground"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -40,14 +43,22 @@ const Header = () => {
         </div>
       )}
     </header>
-  )
-}
+  );
+};
 
-const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <Link href={href} className="text-gray-600 hover:text-primary transition-colors">
+const NavLink = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => (
+  <Link
+    href={href}
+    className="text-gray-600 hover:text-primary transition-colors"
+  >
     {children}
   </Link>
-)
+);
 
-export default Header
-
+export default Header;
