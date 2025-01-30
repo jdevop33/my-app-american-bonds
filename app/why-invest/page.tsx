@@ -27,7 +27,8 @@ export default function WhyInvest() {
           <p className="text-xl text-gray-700 mb-8">
             Bright America Bonds offer a unique investment opportunity that
             combines the stability of municipal bonds with the growth potential
-            of sustainable infrastructure projects. Here&apos;s why they stand out:
+            of sustainable infrastructure projects. Here&apos;s why they stand
+            out:
           </p>
         </div>
 
@@ -91,8 +92,8 @@ export default function WhyInvest() {
             Ready to Invest in America&apos;s Future?
           </h2>
           <p className="text-xl text-gray-700 mb-8">
-            Join us in modernizing America&apos;s infrastructure while securing your
-            financial future with Bright America Bonds.
+            Join us in modernizing America&apos;s infrastructure while securing
+            your financial future with Bright America Bonds.
           </p>
           <Link href="/contact?type=investor" className="btn-primary">
             Contact Us to Invest

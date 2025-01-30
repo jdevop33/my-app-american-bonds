@@ -40,10 +40,10 @@ export default function ForBankers() {
           Case Study: Calgary&apos;s $5M Annual Savings
         </h2>
         <p className="text-muted-foreground mb-4">
-          Calgary&apos;s implementation of LED streetlight upgrades, financed through
-          a model similar to Bright America Bonds, resulted in $5 million annual
-          savings. This case study demonstrates the potential for significant
-          returns and positive environmental impact.
+          Calgary&apos;s implementation of LED streetlight upgrades, financed
+          through a model similar to Bright America Bonds, resulted in $5
+          million annual savings. This case study demonstrates the potential for
+          significant returns and positive environmental impact.
         </p>
         <Link
           href="/case-studies/calgary"

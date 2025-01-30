@@ -1,6 +1,4 @@
-
-import { ThemeProvider } from "next-themes"
-
+import { ThemeProvider } from "next-themes";
 
 import "./globals.css";
 import { Inter as FontSans, Young_Serif as FontSerif } from "next/font/google";

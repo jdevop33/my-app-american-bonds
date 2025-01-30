@@ -21,8 +21,8 @@ export default function EdinburghCaseStudy() {
         Edinburgh: Illuminating a Historic City with Modern Technology
       </h1>
       <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
-        How Scotland&apos;s capital is leading the way in smart LED street lighting,
-        balancing heritage preservation with cutting-edge efficiency.
+        How Scotland&apos;s capital is leading the way in smart LED street
+        lighting, balancing heritage preservation with cutting-edge efficiency.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -64,19 +64,19 @@ export default function EdinburghCaseStudy() {
 
         <h2>Smart Technology Integration</h2>
         <p>
-          Edinburgh&apos;s new LED streetlights are equipped with smart technology,
-          allowing for remote control and monitoring. This system enables the
-          city to adjust lighting levels based on time of day, weather
-          conditions, and other factors, further enhancing energy efficiency and
-          reducing light pollution.
+          Edinburgh&apos;s new LED streetlights are equipped with smart
+          technology, allowing for remote control and monitoring. This system
+          enables the city to adjust lighting levels based on time of day,
+          weather conditions, and other factors, further enhancing energy
+          efficiency and reducing light pollution.
         </p>
 
         <h2>Environmental Impact</h2>
         <p>
           The significant reduction in energy usage translates to a substantial
-          decrease in the city&apos;s carbon footprint. This aligns with Edinburgh&apos;s
-          broader sustainability goals and contributes to Scotland&apos;s national
-          efforts to combat climate change.
+          decrease in the city&apos;s carbon footprint. This aligns with
+          Edinburgh&apos;s broader sustainability goals and contributes to
+          Scotland&apos;s national efforts to combat climate change.
         </p>
 
         <h2>Public Reception</h2>
@@ -109,14 +109,15 @@ export default function EdinburghCaseStudy() {
 
         <h2>Lessons Learned</h2>
         <p>
-          Edinburgh&apos;s success demonstrates the potential for large-scale LED
-          street light conversions in historic cities. Key takeaways include:
+          Edinburgh&apos;s success demonstrates the potential for large-scale
+          LED street light conversions in historic cities. Key takeaways
+          include:
         </p>
         <ul>
           <li>Importance of community engagement and feedback</li>
           <li>
-            Balance between energy efficiency and preserving the city&apos;s unique
-            character
+            Balance between energy efficiency and preserving the city&apos;s
+            unique character
           </li>
           <li>
             Long-term financial benefits of investing in smart, energy-efficient
@@ -140,12 +141,12 @@ export default function EdinburghCaseStudy() {
         </h2>
         <p className="text-muted-foreground mb-4">
           While Bright America Bonds primarily focuses on U.S. cities,
-          Edinburgh&apos;s success story offers valuable insights for our projects.
-          We can help American cities implement similar large-scale LED street
-          light conversion projects, providing the necessary funding and
-          expertise. Our innovative financing model allows cities to modernize
-          their infrastructure without upfront costs, using the energy savings
-          to repay the bonds over time.
+          Edinburgh&apos;s success story offers valuable insights for our
+          projects. We can help American cities implement similar large-scale
+          LED street light conversion projects, providing the necessary funding
+          and expertise. Our innovative financing model allows cities to
+          modernize their infrastructure without upfront costs, using the energy
+          savings to repay the bonds over time.
         </p>
         <Link
           href="/for-cities"

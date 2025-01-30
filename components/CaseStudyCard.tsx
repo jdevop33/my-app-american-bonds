@@ -1,4 +1,3 @@
-
 interface CaseStudyCardProps {
   city: string;
   state?: string;
@@ -30,7 +29,7 @@ const CaseStudyCard = ({
           <span className="text-gray-600 ml-2">{description}</span>
         </div>
       </div>
-      
+
       <div className="space-y-3">
         {metrics.map((metric, index) => (
           <div key={index} className="flex justify-between">

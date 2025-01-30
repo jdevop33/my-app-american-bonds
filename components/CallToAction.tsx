@@ -8,8 +8,8 @@ export default function CallToAction() {
           Let&apos;s Light the Way to a Brighter Future
         </h2>
         <p className="text-xl mb-8">
-          Ready to modernize your city&apos;s infrastructure or invest in America&apos;s
-          future?
+          Ready to modernize your city&apos;s infrastructure or invest in
+          America&apos;s future?
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link href="/contact?type=municipality" className="btn-primary">

@@ -135,8 +135,8 @@ export default function MarketingPage() {
                 $1M Investment Example
               </h3>
               <p className="text-gray-600">
-                A $1 million bond can upgrade an entire city&apos;s street lighting
-                system, leading to $300,000 in annual savings.
+                A $1 million bond can upgrade an entire city&apos;s street
+                lighting system, leading to $300,000 in annual savings.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -149,9 +149,10 @@ export default function MarketingPage() {
           </div>
           <div className="mt-8 text-center">
             <p className="text-lg text-gray-700">
-              &quot;Bright America Bonds empower municipalities to take control of
-              their infrastructure needs, align with sustainability goals, and
-              drive local economic growth—all with minimal financial risk.&quot;
+              &quot;Bright America Bonds empower municipalities to take control
+              of their infrastructure needs, align with sustainability goals,
+              and drive local economic growth—all with minimal financial
+              risk.&quot;
             </p>
           </div>
         </div>
@@ -233,12 +234,16 @@ export default function MarketingPage() {
               city="Ann Arbor"
               state="MI"
               savings="$100,000+"
-              description="Annual savings from LED streetlight program" metrics={[]}            />
+              description="Annual savings from LED streetlight program"
+              metrics={[]}
+            />
             <CaseStudyCard
               city="Edinburgh"
               country="UK"
               savings="£1.5 Million"
-              description="Annual savings from 64,000 smart LED streetlights" metrics={[]}            />
+              description="Annual savings from 64,000 smart LED streetlights"
+              metrics={[]}
+            />
           </div>
           <div className="mt-8 text-center">
             <Link href="/case-studies" className="btn-pictonBlue">

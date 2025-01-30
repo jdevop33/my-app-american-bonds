@@ -1,11 +1,5 @@
 import Link from "next/link";
-import {
-  ArrowLeft,
-  DollarSign,
-  Leaf,
-  Clock,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowLeft, DollarSign, Leaf, Clock, ArrowRight } from "lucide-react";
 
 export default function AnnArborCaseStudy() {
   return (
@@ -116,10 +110,11 @@ export default function AnnArborCaseStudy() {
 
         <h2>Future Potential</h2>
         <p>
-          Ann Arbor&apos;s approach of reinvesting savings into further retrofits
-          ensures a sustainable, long-term improvement in the city&apos;s lighting
-          infrastructure. This model not only continues to generate cost savings
-          but also progressively reduces the city&apos;s carbon footprint.
+          Ann Arbor&apos;s approach of reinvesting savings into further
+          retrofits ensures a sustainable, long-term improvement in the
+          city&apos;s lighting infrastructure. This model not only continues to
+          generate cost savings but also progressively reduces the city&apos;s
+          carbon footprint.
         </p>
       </div>
 
@@ -130,11 +125,11 @@ export default function AnnArborCaseStudy() {
         <p className="text-muted-foreground mb-4">
           Bright America Bonds can provide the initial funding needed for cities
           to implement large-scale LED street light conversion projects like Ann
-          Arbor&apos;s. Our innovative funding model allows cities to modernize their
-          infrastructure without upfront costs, using the energy savings to
-          repay the bonds over time. We can also help cities develop strategies
-          for reinvesting savings into further improvements, creating a
-          sustainable cycle of upgrades and savings.
+          Arbor&apos;s. Our innovative funding model allows cities to modernize
+          their infrastructure without upfront costs, using the energy savings
+          to repay the bonds over time. We can also help cities develop
+          strategies for reinvesting savings into further improvements, creating
+          a sustainable cycle of upgrades and savings.
         </p>
         <Link
           href="/for-cities"

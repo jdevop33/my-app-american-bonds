@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { ArrowLeft, Lightbulb, DollarSign, Leaf, ArrowRight } from "lucide-react";
+import {
+  ArrowLeft,
+  Lightbulb,
+  DollarSign,
+  Leaf,
+  ArrowRight,
+} from "lucide-react";
 
 export default function LosAngelesCaseStudy() {
   return (
@@ -40,11 +46,11 @@ export default function LosAngelesCaseStudy() {
       <div className="prose max-w-none mb-12">
         <h2>Project Overview</h2>
         <p>
-          In 2013, Los Angeles completed the world&apos;s largest LED street light
-          retrofit project, converting over 140,000 sodium vapor street lights
-          to LED over a period of seven years. This massive undertaking not only
-          improved the quality of lighting across the city but also resulted in
-          significant energy and cost savings.
+          In 2013, Los Angeles completed the world&apos;s largest LED street
+          light retrofit project, converting over 140,000 sodium vapor street
+          lights to LED over a period of seven years. This massive undertaking
+          not only improved the quality of lighting across the city but also
+          resulted in significant energy and cost savings.
         </p>
 
         <h2>Innovative Approach</h2>
@@ -68,11 +74,11 @@ export default function LosAngelesCaseStudy() {
 
         <h2>Lessons Learned</h2>
         <p>
-          Los Angeles&apos; success demonstrates the potential for large-scale LED
-          street light conversions to not only save money and reduce energy
+          Los Angeles&apos; success demonstrates the potential for large-scale
+          LED street light conversions to not only save money and reduce energy
           consumption but also to serve as a foundation for further smart city
-          initiatives. The project&apos;s success has inspired many other cities to
-          follow suit, making it a true leader in urban sustainability.
+          initiatives. The project&apos;s success has inspired many other cities
+          to follow suit, making it a true leader in urban sustainability.
         </p>
       </div>
 

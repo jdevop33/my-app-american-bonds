@@ -68,7 +68,9 @@ export function ContactForm() {
       toast({
         title: "Error",
         description:
-          error instanceof Error ? error.message : "There was a problem sending your message. Please try again.",
+          error instanceof Error
+            ? error.message
+            : "There was a problem sending your message. Please try again.",
         variant: "destructive",
       });
     } finally {

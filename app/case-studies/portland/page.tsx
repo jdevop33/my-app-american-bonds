@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { ArrowLeft, Lightbulb, DollarSign, Leaf, ArrowRight } from "lucide-react";
+import {
+  ArrowLeft,
+  Lightbulb,
+  DollarSign,
+  Leaf,
+  ArrowRight,
+} from "lucide-react";
 
 export default function PortlandCaseStudy() {
   return (
@@ -100,9 +106,9 @@ export default function PortlandCaseStudy() {
         <p className="text-muted-foreground mb-4">
           Bright America Bonds can provide the financing needed for cities to
           implement large-scale LED street light conversion projects like
-          Portland&apos;s. Our innovative funding model allows cities to modernize
-          their infrastructure without upfront costs, using the energy savings
-          to repay the bonds over time. We can also help cities develop
+          Portland&apos;s. Our innovative funding model allows cities to
+          modernize their infrastructure without upfront costs, using the energy
+          savings to repay the bonds over time. We can also help cities develop
           strategies for reinvesting savings into further improvements,
           enhancing the overall impact of the project.
         </p>
