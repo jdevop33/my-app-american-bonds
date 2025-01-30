@@ -5,6 +5,7 @@ import CaseStudyCard from "@/components/CaseStudyCard";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import CallToAction from "@/components/CallToAction";
+import ChaRt from "@/components/chart";
 
 export const metadata = {
   title:
@@ -132,9 +133,7 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-4">
                   Competitive Yields
                 </h3>
-                <Image
-                  src="/images/yield-comparison-chart.png"
-                  alt="Municipal bond yields compared to Treasuries and corporate bonds"
+                <ChaRt
                   width={500}
                   height={300}
                   className="rounded-lg shadow-lg"
