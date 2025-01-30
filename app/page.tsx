@@ -44,7 +44,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center">
           <Image
-            src="/images/city-night-led.jpg"
+            src="/led.jpg"
             alt="City at night with LED streetlights"
             layout="fill"
             objectFit="cover"
