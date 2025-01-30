@@ -8,7 +8,7 @@ export default function ForCities() {
         For City Managers: Modernize Without the Burden
       </h1>
       <p className="text-xl text-gray-700 mb-12 max-w-3xl">
-        Upgrade your city's infrastructure, reduce costs, and create jobs
+        Upgrade your city&apos;s infrastructure, reduce costs, and create jobs
         without raising taxes or burdening your budget.
       </p>
 
@@ -54,7 +54,7 @@ export default function ForCities() {
 
       <div className="text-center">
         <h2 className="text-3xl font-serif font-bold text-pictonBlue-800 mb-6">
-          Ready to Brighten Your City's Future?
+          Ready to Brighten Your City&apos;s Future?
         </h2>
         <Link href="/contact" className="btn-pictonBlue inline-block">
           Request a Consultation

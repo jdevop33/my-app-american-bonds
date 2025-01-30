@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   ArrowRight,
   LightbulbIcon as LightBulb,
@@ -24,7 +23,7 @@ export default function MarketingPage() {
         <div className="relative container mx-auto px-4 py-24 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Invest in America's Future: Bright America Bonds
+              Invest in America&apos;s Future: Bright America Bonds
             </h1>
             <p className="mt-6 text-xl">
               Smart financing for sustainable cities. Upgrade infrastructure
@@ -136,7 +135,7 @@ export default function MarketingPage() {
                 $1M Investment Example
               </h3>
               <p className="text-gray-600">
-                A $1 million bond can upgrade an entire city's street lighting
+                A $1 million bond can upgrade an entire city&apos;s street lighting
                 system, leading to $300,000 in annual savings.
               </p>
             </div>
@@ -150,9 +149,9 @@ export default function MarketingPage() {
           </div>
           <div className="mt-8 text-center">
             <p className="text-lg text-gray-700">
-              "Bright America Bonds empower municipalities to take control of
+              &quot;Bright America Bonds empower municipalities to take control of
               their infrastructure needs, align with sustainability goals, and
-              drive local economic growth—all with minimal financial risk."
+              drive local economic growth—all with minimal financial risk.&quot;
             </p>
           </div>
         </div>
@@ -234,14 +233,12 @@ export default function MarketingPage() {
               city="Ann Arbor"
               state="MI"
               savings="$100,000+"
-              description="Annual savings from LED streetlight program"
-            />
+              description="Annual savings from LED streetlight program" metrics={[]}            />
             <CaseStudyCard
               city="Edinburgh"
               country="UK"
               savings="£1.5 Million"
-              description="Annual savings from 64,000 smart LED streetlights"
-            />
+              description="Annual savings from 64,000 smart LED streetlights" metrics={[]}            />
           </div>
           <div className="mt-8 text-center">
             <Link href="/case-studies" className="btn-pictonBlue">
@@ -255,7 +252,7 @@ export default function MarketingPage() {
       <section className="py-16 bg-pictonBlue-700 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            Ready to Brighten Your City's Future?
+            Ready to Brighten Your City&apos;s Future?
           </h2>
           <p className="text-xl mb-8">
             Learn how Bright America Bonds can transform your municipality or

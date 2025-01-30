@@ -37,10 +37,10 @@ export default function ForBankers() {
 
       <div className="bg-muted rounded-lg p-8 mb-12">
         <h2 className="text-2xl font-serif font-bold text-foreground mb-4">
-          Case Study: Calgary's $5M Annual Savings
+          Case Study: Calgary&apos;s $5M Annual Savings
         </h2>
         <p className="text-muted-foreground mb-4">
-          Calgary's implementation of LED streetlight upgrades, financed through
+          Calgary&apos;s implementation of LED streetlight upgrades, financed through
           a model similar to Bright America Bonds, resulted in $5 million annual
           savings. This case study demonstrates the potential for significant
           returns and positive environmental impact.
@@ -55,7 +55,7 @@ export default function ForBankers() {
 
       <div className="text-center">
         <h2 className="text-3xl font-serif font-bold text-foreground mb-6">
-          Ready to Invest in America's Future?
+          Ready to Invest in America&apos;s Future?
         </h2>
         <Link href="/contact" className="btn-primary">
           Schedule a Consultation
