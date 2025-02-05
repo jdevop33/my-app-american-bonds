@@ -27,7 +27,7 @@ export default function HowItWorks() {
           className="flex flex-col items-center text-center max-w-xs"
         >
           <div className="mb-4">{step.icon}</div>
-          <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+          <h3 className="text-xl font-semibold mb-2 text-green-600">{step.title}</h3>
           <p className="text-gray-600">{step.description}</p>
           {index < steps.length - 1 && (
             <div className="hidden md:block text-green-600 text-4xl font-bold mt-4">

@@ -4,8 +4,8 @@ import SavingsCalculator from "@/components/SavingsCalculator";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
-import CallToAction from "@/components/CallToAction";
 import ChaRt from "@/components/Test";
+import SpeedCheckLanding from "@/components/SpeedCheck";
 
 export const metadata = {
   title:
@@ -33,7 +33,7 @@ export default function Home() {
             ],
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+1-555-123-4567",
+              telephone: "+1-250-415-5678",
               contactType: "customer service",
             },
             description:
@@ -47,10 +47,9 @@ export default function Home() {
           <Image
             src="/led.jpg"
             alt="City at night with LED streetlights"
-            layout="fill"
-            objectFit="cover"
+            fill
             quality={100}
-            className="absolute z-0"
+            className="absolute z-0 object-cover"
           />
           <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -130,7 +129,7 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl font-semibold mb-4 text-green-600">
                   Competitive Yields
                 </h3>
                 <ChaRt
@@ -140,7 +139,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl font-semibold mb-4 text-green-600">
                   Self-Funding Model
                 </h3>
                 <Image
@@ -179,6 +178,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <SpeedCheckLanding />
 
         {/* Call to Action */}
         <section className="py-20 bg-green-900 text-white">
@@ -200,7 +200,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <CallToAction />
       </div>
     </>
   );

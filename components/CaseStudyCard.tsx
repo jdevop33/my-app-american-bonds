@@ -21,7 +21,7 @@ const CaseStudyCard = ({
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="mb-4">
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-2xl font-bold text-green-600">
           {city}, {state || country}
         </h3>
         <div className="mt-2">
